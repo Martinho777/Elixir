@@ -14,3 +14,10 @@ defmodule Calculadora do
     resultado = factorial(n)
     IO.puts("El factorial de #{n} es #{resultado}")
   end
+
+ def factorial(0), do: 1
+  def factorial(n), do: n * factorial(n - 1)
+end
+
+
+Calculadora.iniciar()
